@@ -3,29 +3,10 @@ Have a theme you want to use? Copy and paste the contents here.
 You need to restart (click the restart button) after changing. */
 
 @import url("https://crearts-community.github.io/Settings-Icons/clients/settings-icons.theme.css");
-@import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
-@import url(https://dablulite.github.io/redesigneduserareas/import.css);
+@import url("https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css");
+@import url("https://dablulite.github.io/redesigneduserareas/import.css");
 @import url('https://lolpowerluke.github.io/smallDMchannelList/smallDMchannelList.css');
 @import url('https://objectiveslayer.github.io/bd-snippets/customizable-toolbar.css');
-
-:root{
-    /* NOTE: change "block" to "none" if you want to hide the listed icons! */
-
-    /* Servers/DM's */
-    --threads-icon: block;
-    --notifications-settings-icon: none;
-    --pinned-messages-icon: block;
-    --memberlist-icon: block;
-    --search-bar: block;
-    --inbox-icon: none;
-    --help-icon: none;
-
-    /* DM's/group-chats */
-    --voice-call-icon: block;
-    --video-call-icon: none;
-    --add-friends-to-dm-icon: block;
-    --user-profile-icon: block;
-}
 
 /**
  * @name Rounded Dark
@@ -53,6 +34,23 @@ You need to restart (click the restart button) after changing. */
 
     --radius: 16px;
     --spacing: 0px;
+    
+    /* NOTE: change "block" to "none" if you want to hide the listed icons! */
+
+    /* Servers/DM's */
+    --threads-icon: block;
+    --notifications-settings-icon: none;
+    --pinned-messages-icon: block;
+    --memberlist-icon: block;
+    --search-bar: block;
+    --inbox-icon: none;
+    --help-icon: none;
+
+    /* DM's/group-chats */
+    --voice-call-icon: block;
+    --video-call-icon: none;
+    --add-friends-to-dm-icon: block;
+    --user-profile-icon: block;
 }
 
 .sidebar-1tnWFu, .content-1SgpWY {
