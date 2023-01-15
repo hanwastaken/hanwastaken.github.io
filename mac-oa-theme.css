@@ -5,8 +5,27 @@ You need to restart (click the restart button) after changing. */
 @import url("https://crearts-community.github.io/Settings-Icons/clients/settings-icons.theme.css");
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
 @import url(https://dablulite.github.io/redesigneduserareas/import.css);
-@import url(https://dablulite.github.io/accountdetailscolumns/import.css);
-@import url(https://neodymium7.github.io/BetterDiscordStuff/CSS/AddServerDarkMode.css);
+@import url('https://lolpowerluke.github.io/smallDMchannelList/smallDMchannelList.css');
+@import url('https://objectiveslayer.github.io/bd-snippets/customizable-toolbar.css');
+
+:root{
+    /* NOTE: change "block" to "none" if you want to hide the listed icons! */
+
+    /* Servers/DM's */
+    --threads-icon: block;
+    --notifications-settings-icon: none;
+    --pinned-messages-icon: block;
+    --memberlist-icon: block;
+    --search-bar: block;
+    --inbox-icon: none;
+    --help-icon: none;
+
+    /* DM's/group-chats */
+    --voice-call-icon: block;
+    --video-call-icon: none;
+    --add-friends-to-dm-icon: block;
+    --user-profile-icon: block;
+}
 
 /**
  * @name Rounded Dark
@@ -17,12 +36,6 @@ You need to restart (click the restart button) after changing. */
 */
 
 @import url('https://adaelynxiv.github.io/RoundedDark/src/roundeddark.css');
-
-/* #  Plugin Fixes/Edits  # */
-/* Uncomment a plugin Import URL if you use a plugin that's listed here */
-
-/* Channel Tabs: */
-/*@import url('https://adaelynxiv.github.io/RoundedDark/src/plugins/channeltabs.css');*/
 
 /* Customizable Variables */
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
@@ -159,40 +172,6 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"]{content:url("data:image/svg+xml
     margin-left: -6px;
 }
 
-/* stick nav server and add server buttons to bottom of serverlist */
-.scroller-3X7KbA {
-  contain: unset;
-  padding-bottom: 190px;
-}
-.scroller-3X7KbA::before {
-    content: "";
-    position: fixed;
-    bottom: 0px;
-    width: 72px;
-    height: 190px;
-    background: linear-gradient(transparent, var(--grey) 30%);
-    z-index: 1;
-}
-.tutorialContainer-2jwoiB {
-    position: fixed;
-    bottom: -20px;
-    z-index: 1;
-}
-.tutorialContainer-2jwoiB + .listItem-3SmSlK {
-    position: fixed;
-    bottom: 35px;
-    contain: none;
-    z-index: 1;
-}
-.listItemWrapper-3d87LP{
-    margin: 0 0 27px;
-}
-
-/* move up new ping server list pill */
-.unreadMentionsIndicatorBottom-3RJMnQ {
-    bottom: 115px;
-}
-
 /* Avatar only memberslist until hover */
 .membersWrap-3NUR2t {
   min-width: unset;
@@ -253,9 +232,4 @@ img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"]{content:url("data:image/svg+xml
     max-height: unset !important;
     padding-top: 31px;
     top: 0px;
-}
-
-/* fixes home icon positioning */
-.tutorialContainer-1pL9QS{
-    height: 60px;
 }
